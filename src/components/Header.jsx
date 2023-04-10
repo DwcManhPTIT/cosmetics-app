@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 
 import { app } from "../firebase.config";
-import Logo from "../img/logo.png";
+import Logo from "../img/logo.jpg";
 import Avatar from "../img/avatar.png";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
@@ -66,8 +66,8 @@ const Header = () => {
       {/* desktop & tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex items-center gap-2">
-          <img src={Logo} className="w-8 object-cover" alt="logo" />
-          <p className="text-headingColor text-xl font-bold"> City</p>
+          <img src={Logo} className="w-[3.2rem] rounded-[45%] object-cover" alt="logo" />
+          <p className="text-headingColor text-xl font-bold"> Cosmetics</p>
         </Link>
 
         <div className="flex items-center gap-8">
